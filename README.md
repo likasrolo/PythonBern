@@ -1,3 +1,6 @@
+https://replit.com/@lucasrolo2205/PromptCraftAI?s=app
+
+
 Je veux faire une app web pour pouvoir aider les utilisateur à copier des prompt en fonction des requis des infos qu'ils renseignent.
 
 Le but du programme est de à partir d'un grosse extraction de portefeuilles client, et d'une newsletter en format excel, on puisse faire une newsletter personnaliser alleger avec les infos qui concerne les clients uniquement.
