@@ -135,7 +135,7 @@ def matcli(path):
  'Porsche (04/06)',
  'BMW (26/06)']
     matrix_client_events = [[event, []] for event in titres]
-    html_to_markdown_with_table(path, "../data/newsletter_md.md")
+    html_to_markdown_with_table(path, "data/newsletter_md.md")
     return matrix_client_events
 
 if __name__ == "__main__":
