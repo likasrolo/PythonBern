@@ -1,45 +1,156 @@
-https://replit.com/@lucasrolo2205/PromptCraftAI?s=app
+# 📰 Newsletter Personnalisée - Générateur IA
 
+## 🎯 Vue d'ensemble
 
-Je veux faire une app web pour pouvoir aider les utilisateur à copier des prompt en fonction des requis des infos qu'ils renseignent.
+**Newsletter Personnalisée** est une application web moderne qui transforme vos newsletters et données clients en contenu personnalisé grâce à l'intelligence artificielle. L'application analyse automatiquement vos fichiers HTML de newsletter et vos données CRM Excel pour générer des prompts IA optimisés.
 
-Le but du programme est de à partir d'un grosse extraction de portefeuilles client, et d'une newsletter en format excel, on puisse faire une newsletter personnaliser alleger avec les infos qui concerne les clients uniquement.
-le code python ci-joint est un programme avec une petite interface qui sert à faire le programme et pouvoir copier coller les prompts.
+## ✨ Fonctionnalités
 
-l'architecture est la suivante : 
+- **🔄 Interface Drag & Drop**: Téléchargement facile des fichiers HTML et Excel
+- **🤖 Traitement IA Automatique**: Extraction et analyse intelligente des données
+- **📊 Gestion des Sections**: Division automatique des clients en sections optimisées
+- **💬 Génération de Prompts**: Création de prompts personnalisés pour l'IA
+- **📋 Copie Automatique**: Copie directe des prompts dans le presse-papier
+- **🎨 Interface Moderne**: Design responsive avec Bootstrap et animations
+- **📈 Suivi de Progression**: Indicateurs visuels du traitement
+- **💾 Sauvegarde Automatique**: Gestion des données et des résultats
 
-traitement de le newsletter : client donne (via drag and drop) la newsletter en format html. 
-(Via IA)on extrait les titres de la newsletter (présent dans le sommaire) et on les stocke dans une liste. 
-en paralelle on peux crée(Via IA) une vertion de la newsletter résumé. pour alleger les futures prompts. 
+## 🚀 Installation
 
-on traite le fichier excel des crm(actifs des clients) on extrait les données des clients dans le fichier exel(sinon beaucoup trop lourd) on le faire adns le script python.
-on stocke ces infos clients. 
+### Prérequis
 
-puis via IA, on identifie les les numéro de clients correspondant à chaque titres avec des commentaires. chaque 100 position client pour ne pas etre trop lourd. 
+- Python 3.8 ou supérieur
+- pip (gestionnaire de paquets Python)
+- Navigateur web moderne
 
-puis on extrait la liste des des clients associées et la liste des commentaires.
+### Installation rapide
 
-dans la newsletter on ajoute la liste des numéro clients en dessous de chaque titre associées.
+1. **Cloner le repository** :
+```bash
+git clone <repository-url>
+cd newsletter-app
+```
 
-(via IA) on donne cette newsletter avec les numéro client et la liste des commentaires - pour avoir une newsletter personnalisé.
+2. **Installer les dépendances** :
+```bash
+pip install -r requirements.txt
+```
 
-(via IA) signifie qu'un prompt texte est générer, puis que l'utilisateur le copie l'envoie à l'ia et colle le résultat pour l'enregistrer dans le programme.
+3. **Lancer l'application** :
+```bash
+python run.py
+```
 
+4. **Ouvrir dans le navigateur** :
+   - Accédez à : `http://localhost:5000`
 
-peux tu me faire l'app en fonction de l'app python pour avoir une belle interface. 
+## 🎮 Utilisation
 
+### 1. **Téléchargement des fichiers**
+- Glissez-déposez votre newsletter HTML
+- Ajoutez votre fichier Excel CRM
+- Cliquez sur "Lancer le traitement"
 
+### 2. **Traitement des sections**
+- Copiez les prompts générés automatiquement
+- Collez-les dans votre outil IA (ChatGPT, Claude, etc.)
+- Récupérez les réponses et collez-les dans l'interface
+- Sauvegardez vos réponses
 
+### 3. **Génération finale**
+- Accédez à la page "Prompt Final"
+- Générez le prompt de newsletter personnalisée
+- Utilisez ce prompt pour créer votre newsletter finale
 
-Portfolio	DATE DE COTATION	CODE ISIN	CODE TLK	INSTRUMENT	EMMETEUR	EMMETEUR CODE	EMMETEUR-TYPE	DEV.	QUANTITE	PRIX ACTUEL	ACTIFS	TYPE	TYPE	TYPE	RATING S&P	DATE RATING S&P	COUT DAQUISITION	INTERET COURUS	APPL DEFE	CONSEILLER	DEFE DISTRIB	DEFE VNI	RENSEIGNEMENTS	CONTROLE : XXXXX	DATE DE DEBUT	DATE DE FIN/ 1 er coupon	COURS D ACHAT	INSTRUMENT	TAUX	ROUND LOT	INTERET COURUS DEVISE	DATE DE COUPON	%/ V.I. TOT	Portfolio	MOYENNE ISF	CONTROLE : XXXXX	FREQUENCE	EMMETEUR/PAYS DE RESIDENCE	EMETEUR/RISQUE PAYS	type fonds	sous type fonds	niveau risque.	COUT DAQUISITION BRUT	COUT DAQUISITION NET	cap garanti	cap garanti %	ESSAI CODE DEPOT	titre QI	type	type	INSTRUMENT	INSTRUMENT	Zone geographique	Zone geographique	APA1	APA2	open nature	Gerant	PAYS DE RESIDENCE GEOGRAPHIQUE	PAYS DE RESIDENCE FISCAL 2	%/ V.I. TOT	TX FACIAL	RENDEMENT	MATURITE	Duration	SENSIBILITE	CONVEX.	Especes et depots + FX TARGET	Fonds et sicav monetaires	Fixed incomes echeance < 31 12 2011	Fixed incomes echeance >= 31 12 2011	AUTRES TITRES	SECTEUR	SECTEUR II	INSTRUMENT	DATE PROCHAIN COUPON	EMMETEUR-TYPE	% de la ligne dans le Portefeuille	DATE D OUVERTURE DU COMPTE	DATE MANDAT	TAUX CHGE	GA/GZ	GRILLE
-MC72001152	30/04/2025		MCM-TELO-EUR-5	TERM LOAN				EUR	-301742.410000000	1.000000000	-301872.61	0.00	M-402	MM-05			-301742.41	-130.20		ROLLAND JEAN-MARC			AUTRES		23/04/2025	25/07/2033	1.000000000		2.250000000		-130.20		-0.01	720			Aucune			CO_ACL_CSH	CO_SAC_CSH_DELO		0.00	-301742.41	No		MC04745560051-25L	No	Non géré	Autre					AUTRES	AUTRES	Open	ROLLAND JEAN-MARC	France	France		2.25000		25/07/2033	6.84	6.70	0.00								Without frequency	23/04/2025		50.604394300			2.250000000	<None>	 
-MC72001152	30/04/2025		MCM-TELO-EUR-5	TERM LOAN				EUR	-301742.410000000	1.000000000	-301872.61	0.00	M-402	MM-05			-301742.41	-130.20		ROLLAND JEAN-MARC			AUTRES		23/04/2025	25/07/2033	1.000000000		2.250000000		-130.20		-0.01	720			Aucune			CO_ACL_CSH	CO_SAC_CSH_DELO		0.00	-301742.41	No		MC04749930051-25L	No	Non géré	Autre					AUTRES	AUTRES	Open	ROLLAND JEAN-MARC	France	France		2.25000		25/07/2033	6.84	6.70	0.00								Without frequency	23/04/2025		50.604394300			2.250000000	<None>	 
-MC72001152	30/04/2025		MC72001152-0012600-EUR	CAV-2600-EUR				EUR	7210.840000000	1.000000000	7210.84	0.00	C-001	CSH-04			2457.44	0.00		ROLLAND JEAN-MARC			APA_CASH		11/07/2018	31/12/9999	0.340798021				0.00		0.00	720			Année			CO_ACL_CSH	CO_SAC_CSH_CACC		0.00	2457.44	No		MC04749930051-25L	No	Non géré	Autre					APA_CASH	AUTRES	<None>	ROLLAND JEAN-MARC	France	France				31/12/9999	0.00	0.00	0.00								Without frequency	11/07/2018		-1.208788700			1.000000000	<None>	 
-MC72002131	30/04/2025		MCM-TELO-EUR-8	TERM LOAN				EUR	-6570000.000000000	1.000000000	-6599181.75	0.00	M-402	MM-05			-6570000.00	-29181.75		ROLLAND JEAN-MARC			AUTRES		07/02/2025	07/02/2029	1.000000000		1.950000000		-29181.75		-0.19	720			Aucune			CO_ACL_CSH	CO_SAC_CSH_DELO		0.00	-6570000.00	No		MC03332630007-25L	No	Non géré	Autre					AUTRES	AUTRES	Open	ROLLAND JEAN-MARC	France	France		1.95000		07/02/2029	1.84	1.81	0.00								Without frequency	07/02/2025		111.276405100			1.950000000	<None>	 
-MC72002131	30/04/2025		MC72002131-0012600-EUR	CAV-2600-EUR				EUR	999.750000000	1.000000000	999.75	0.00	C-001	CSH-04			999.75	0.00		ROLLAND JEAN-MARC			APA_CASH		06/02/2019	31/12/9999	1.000000000				0.00		0.00	720			Année			CO_ACL_CSH	CO_SAC_CSH_CACC		0.00	999.75	No		MC96590380032-25L	No	Non géré	Autre					APA_CASH	AUTRES	<None>	ROLLAND JEAN-MARC	France	France				31/12/9999	0.00	0.00	0.00								Without frequency	06/02/2019		-0.016857900			1.000000000	<None>	 
-MC72002131	30/04/2025		MCM-CADP-EUR-8	CALL DEPOSIT				EUR	633267.260000000	1.000000000	667740.82	0.00	M-401	MM-05			633267.26	34473.56		ROLLAND JEAN-MARC			APA_CASH		23/04/2025	31/12/9999	1.000000000		2.100000000		34473.56		0.02	720			Aucune			CO_ACL_CSH	CO_SAC_CSH_FIDU		0.00	633267.26	No		MC96590380032-25L	No	Non géré	Autre					APA_CASH	AUTRES	Open	ROLLAND JEAN-MARC	France	France		2.10000		31/12/9999	0.01	0.01	0.00								Without frequency	23/04/2025		-11.259547100			2.100000000	<None>	 
-MC72002164	30/04/2025		MCM-TELO-EUR-8	TERM LOAN				EUR	-455300.020000000	1.000000000	-457088.84	0.00	M-402	MM-05			-455300.02	-1788.82		ROLLAND JEAN-MARC			AUTRES		21/02/2025	21/02/2029	1.000000000		2.080000000		-1788.82		-0.01	720			Aucune			CO_ACL_CSH	CO_SAC_CSH_DELO		0.00	-455300.02	No		MC03359280013-25L	No	Non géré	Autre					AUTRES	AUTRES	Open	ROLLAND JEAN-MARC	Monaco	Monaco		2.08000		21/02/2029	1.84	1.81	0.00								Without frequency	21/02/2025		101.446962900			2.080000000	<None>	 
-MC72002164	30/04/2025		MC72002164-0012600-EUR	CAV-2600-EUR				EUR	6519.570000000	1.000000000	6519.57	0.00	C-001	CSH-04			6519.57	0.00		ROLLAND JEAN-MARC			APA_CASH		15/02/2019	31/12/9999	1.000000000				0.00		0.00	720			Année			CO_ACL_CSH	CO_SAC_CSH_CACC		0.00	6519.57	No		MC13098936-4-202503P	No	Non géré	Autre					APA_CASH	AUTRES	<None>	ROLLAND JEAN-MARC	Monaco	Monaco				31/12/9999	0.00	0.00	0.00								Without frequency	15/02/2019		-1.446962900			1.000000000	<None>	 
-MC72002662	30/04/2025		MC72002662-0013200-EUR	CAV-3200-EUR				EUR	135755.280000000	1.000000000	135755.28	0.00	C-001	CSH-04			135755.28	0.00		ROLLAND JEAN-MARC			APA_CASH		29/05/2019	31/12/9999	1.000000000				0.00		0.00	720			Année			CO_ACL_CSH	CO_SAC_CSH_CACC		0.00	135755.28	No		MC98872810028-25L	No	Non géré	Autre					APA_CASH	AUTRES	<None>	ROLLAND JEAN-MARC	Monaco	Monaco				31/12/9999	0.00	0.00	0.00								Without frequency	29/05/2019		7.613149400			1.000000000	<None>	 
+## 📁 Structure du projet
+
+```
+newsletter-app/
+├── app.py                 # Application Flask principale
+├── run.py                 # Fichier de démarrage
+├── requirements.txt       # Dépendances Python
+├── data/                  # Dossier de données (créé automatiquement)
+├── templates/             # Templates HTML
+│   ├── base.html         # Template de base
+│   ├── index.html        # Page d'accueil
+│   ├── sections.html     # Page des sections
+│   └── final.html        # Page finale
+├── static/               # Fichiers statiques
+│   ├── css/style.css     # Styles personnalisés
+│   └── js/app.js         # JavaScript commun
+└── scr/                  # Modules de traitement
+    ├── main.py           # Traitement principal
+    ├── extract_html.py   # Extraction HTML
+    └── extract_CRM_portfolio.py  # Traitement CRM
+```
+
+## 🔧 Configuration
+
+### Variables d'environnement
+```bash
+export FLASK_ENV=development    # Mode développement
+export FLASK_DEBUG=True         # Mode debug
+```
+
+### Formats de fichiers supportés
+- **Newsletter** : `.html`, `.htm`
+- **CRM** : `.xlsx`, `.xls`
+
+## 🎨 Interface
+
+L'application propose une interface moderne avec :
+- **Design responsive** adapté à tous les écrans
+- **Thème Bootstrap** avec animations fluides
+- **Indicateurs de progression** visuels
+- **Feedback utilisateur** en temps réel
+- **Drag & Drop** intuitif
+
+## 🔄 Workflow
+
+1. **Upload** → Téléchargement des fichiers source
+2. **Processing** → Traitement automatique des données
+3. **Sections** → Génération et collecte des prompts par section
+4. **Final** → Création du prompt final de newsletter
+
+## 🛠️ Développement
+
+### Lancer en mode développement
+```bash
+python app.py
+```
+
+### Structure des données
+- `data/clients_sections.json` : Données clients organisées par sections
+- `data/newsletter_md.md` : Newsletter convertie en Markdown
+- `data/results_processed.json` : Résultats traités des réponses IA
+
+## 🤝 Contribution
+
+1. Fork le projet
+2. Créer une branche feature (`git checkout -b feature/amelioration`)
+3. Commit vos changements (`git commit -am 'Ajout nouvelle fonctionnalité'`)
+4. Push sur la branche (`git push origin feature/amelioration`)
+5. Créer une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+## 🆘 Support
+
+Pour toute question ou problème :
+- Créer une issue sur GitHub
+- Consulter la documentation
+- Vérifier les discussions existantes
+
+## 🗺️ Roadmap
+
+- [ ] 🌐 Support multilingue
+- [ ] 🔗 Intégration API directe avec les IA
+- [ ] 📱 Version mobile native
+- [ ] 🔒 Authentification utilisateur
+- [ ] 💾 Base de données pour la persistance
+- [ ] 📊 Analytics et métriques avancées
+- [ ] 🎯 Templates de newsletter prédéfinis
 
 

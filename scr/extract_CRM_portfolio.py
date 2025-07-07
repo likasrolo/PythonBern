@@ -85,9 +85,9 @@ def json_file(conseiller, fichier_xlsx):
             fichier_xlsx
         )
         sections = grouped_clients_json(clients_moins_100, instrument_limit=100)
-        with open("../data/clients_sections.json", "w", encoding="utf-8") as f:
+        with open("data/clients_sections.json", "w", encoding="utf-8") as f:
             json.dump(sections, f, ensure_ascii=False, indent=2)
-        print("JSON file '../data/clients_sections.json' created successfully.")
+        print("JSON file 'data/clients_sections.json' created successfully.")
 
     except FileNotFoundError:
         print("Erreur : Le fichier Excel n'a pas été trouvé")
